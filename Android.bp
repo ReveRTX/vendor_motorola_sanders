@@ -132,17 +132,7 @@ android_app_import {
 }
 
 android_app_import {
-	name: "imssettings",
-	owner: "motorola",
-	apk: "proprietary/app/imssettings/imssettings.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-}
-
-android_app_import {
-	name: "WfdService",
+	name: "TimeService",
 	owner: "motorola",
 	apk: "proprietary/priv-app/WfdService/WfdService.apk",
 	certificate: "platform",
@@ -172,6 +162,12 @@ android_app_import {
 		enabled: false,
 	},
 	privileged: true,
+}
+
+dex_import {
+	name: "WfdCommon",
+	owner: "motorola",
+	jars: ["proprietary/framework/WfdCommon.jar"],
 }
 
 dex_import {

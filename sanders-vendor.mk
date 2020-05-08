@@ -1454,6 +1454,9 @@ PRODUCT_PACKAGES += \
     DTVPlayer \
     DTVService \
     QtiTelephonyService \
+    CNEService \
+    WfdService \
+    atfwd \
     TimeService \
     embms \
     ims \
@@ -1461,4 +1464,5 @@ PRODUCT_PACKAGES += \
     WfdService \
     atfwd \
     qcrilmsgtunnel \
+    WfdCommon \
     com.fingerprints.extension
