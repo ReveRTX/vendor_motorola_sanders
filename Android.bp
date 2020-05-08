@@ -102,16 +102,6 @@ android_app_import {
 }
 
 android_app_import {
-	name: "TimeService",
-	owner: "motorola",
-	apk: "proprietary/app/TimeService/TimeService.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-}
-
-android_app_import {
 	name: "embms",
 	owner: "motorola",
 	apk: "proprietary/app/embms/embms.apk",
@@ -162,6 +152,17 @@ android_app_import {
 		enabled: false,
 	},
 	privileged: true,
+}
+
+android_app_import {
+	name: "TimeService",
+	owner: "motorola",
+	apk: "proprietary/vendor/app/TimeService/TimeService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	soc_specific: true,
 }
 
 dex_import {
